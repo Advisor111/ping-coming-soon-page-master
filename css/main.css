@@ -1,0 +1,190 @@
+/* start variables */
+:root {
+    /* start colors */
+    /* primary */
+    --Blue: hsl(223, 87%, 63%);
+    /* secondary */
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    /* neutral */
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    /* end colors */
+}
+/* end variables */
+/* start global rulse */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container {
+    padding: 0 25px;
+    margin: 0 auto;
+}
+/* start media */
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+    }
+}
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 972px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+/* end media */
+/* end global rulse */
+/* strat section */
+.section .container {
+    text-align: center;
+    margin-top: 100px;
+}
+.section .container .logo {
+    width: 50px;
+    margin-bottom: 40px;
+}
+.container .subscribe h4 {
+    font-weight: 300;
+    color: var(--Gray);
+}
+.subscribe h4 span {
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+.container .subscribe p {
+    font-size: 12px;
+    margin: 20px 0 30px;
+}
+.subscribe form input[type="email"] {
+    width: 85%;
+    border-radius: 5rem;
+    border: 1px solid var(--Pale-Blue);
+    font-size: 12px;
+    text-indent: 30px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.subscribe form input[type="email"]:focus {
+    outline: none;
+}
+.subscribe form #error {
+    color: var(--Light-Red);
+    display: none;
+    margin: 0;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.subscribe form #submit {
+    width: 85%;
+    border-radius: 5rem;
+    border: none;
+    font-size: 12px;
+    height: 40px;
+    font-weight: 600;
+    background-color: var(--Blue);
+    color: white;
+    box-shadow: 0 8px 25px -15px var(--Blue);
+}
+.container .social img {
+    width: 100%;
+    max-width: 600px;
+    margin: 80px 0 125px;
+}
+.container .social .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 160px;
+    margin: 0 auto 40px;
+}
+.social .social-icons a {
+    border: 0.1px solid var(--Pale-Blue);
+    border-radius: 5rem;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social .social-icons a:hover {
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+}
+.social-icons a i {
+    color: var(--Blue);
+    font-size: 15px;
+    transition: 0.3s;
+}
+.social-icons a:hover i {
+    color: white;
+}
+.container .social p {
+    font-size: 12px;
+    color: var(--Gray);
+    margin-bottom: 40px;
+}
+.section .container footer {
+    margin-bottom: 10px;
+}
+footer .attribution a {
+    color: var(--Blue);
+    transition: 0.3s;
+}
+footer .attribution a:hover {
+    color: black;
+}
+/* strat qurey */
+@media (min-width: 768px) {
+    .section .container .logo {
+        width: 80px;
+        margin-bottom: 40px;
+    }
+    .container .subscribe h4 {
+        font-size: 45px;
+    }
+    .container .subscribe p {
+        font-size: 18px;
+    }
+    .container .subscribe form {
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe form input[type="email"] {
+        width: 400px;
+        height: 50px;
+        font-size: 13px;
+    }
+    .subscribe form #error {
+        font-size: 13px;
+    }
+    .subscribe form #submit {
+        margin-left: 15px;
+        width: 170px;
+        height: 50px;
+        font-size: 13px;
+    }
+    .container .social p {
+        font-size: 14px;
+    }
+}
+/* end qurey */
+/* end section */
